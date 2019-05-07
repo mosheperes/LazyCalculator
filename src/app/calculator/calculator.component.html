@@ -1,0 +1,35 @@
+<ActionBar>
+    <ActionItem class="actionbar" text="Calculator"  ios.position="center"  android.position="popup"></ActionItem>
+<!--    <ActionItem text="Item" ios.position="right" android.position="popup"></ActionItem>-->
+<!--    <ActionItem ios.systemIcon="12" android.systemIcon="ic_menu_search"></ActionItem>-->
+</ActionBar>
+<DockLayout stretchLastChild="true">
+    <StackLayout dock="top" style="height: 35%">
+        <label [text]="num"></label>
+    </StackLayout>
+    <GridLayout rows="*, *, *, *, *" columns="*, *, *, *" dock="bottom" class="border">
+        <label row="0" col="0" text="AC"></label>
+        <label row="0" col="1" text="+/-"></label>
+        <label row="0" col="2" text="%"></label>
+        <label row="1" col="0" text="1"></label>
+        <label row="1" col="1" text="2"></label>
+        <label row="1" col="2" text="3"></label>
+        <label row="2" col="0" text="4"></label>
+        <label row="2" col="1" text="5"></label>
+        <label row="2" col="2" text="6"></label>
+        <label row="3" col="0" text="7"></label>
+        <label row="3" col="1" text="8"></label>
+        <label row="3" col="2" text="9"></label>
+        <label row="4" col="0" colSpan="2" text="0"></label>
+        <label row="4" col="2" text="."></label>
+
+
+        <GridLayout rowSpan="5" col="3" rows="*, *, *, *, *" columns="*">
+            <Label row="0" col="0" text="/"></Label>
+            <label row="1" col="0" text="X"></label>
+            <label row="2" col="0" text="-"></label>
+            <label row="3" col="0" text="+"></label>
+            <label row="4" col="0" text="="></label>
+        </GridLayout>
+    </GridLayout>
+</DockLayout>
